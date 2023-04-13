@@ -1,0 +1,487 @@
+* {
+    box-sizing: border-box;
+  }
+
+
+
+/* Barra de navegação  */
+
+.container {
+    width: 100%;
+    
+    }
+    
+    header,  .navbar{
+    background-color: #2C3C51F5 ;
+    
+    }
+    
+    #nav-container {
+    padding-top: 0;
+    padding-bottom: 0;
+    }
+    
+    #logo {
+    width: 50px;
+    }
+    
+    .navbar-brand {
+    padding: 0;
+    color: white;
+    }
+    
+    .navbar-brand:hover {
+    color: white;
+    }
+    
+    #navbar-links a {
+    
+    color: white;
+    height: 60px;
+    left: 100px;
+    top: 90px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+    font-weight: 1000;
+    text-align:end;
+    
+    
+    }
+    
+    .navbar-expand-lg .navbar-nav .nav-link {
+    padding: 1rem .8rem;
+    }
+    
+     
+
+     /*Configurações de grid*/
+
+   
+     
+
+     .grid-container{
+        display: grid;
+        grid-template-columns: 100% 100%; 
+        align-items: center;
+        background-image: url(../IMG/FUNDO.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100%;
+      
+     }
+
+    
+     /*Imagem do celular*/
+.img-fluid {
+    width: 300%;
+    height: auto;
+}
+
+
+h1 {
+    width: 90%;
+    padding: 10%;
+    left: 350px;
+    top: 450px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 700%;
+    line-height: 130px;
+    text-align: center;
+    color: #2C3C51;
+    mix-blend-mode: darken;
+    text-shadow: 0px 8px 8px rgba(0, 0, 0, 0.25);
+    
+    }
+    h2 {
+    color: black;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;;
+    
+    }
+    
+    p {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;;
+    width: 80%;
+    font-style: normal;
+    font-weight: 200;
+    font-size: 350%;
+    line-height: 250%;
+    text-align: center;
+    color: #000000; 
+    }
+
+    /*Estilização da parte do botão de baixar app*/
+    .listra {
+        
+        background-color: #2C3C51;
+        display: flex;
+        align-items: center;
+        justify-content: end;
+        position:static;
+        width: 100%;
+        height: 200px;
+        left: 0px;
+        top: 829px;
+        background:#2C3C51;
+        padding: 70px;
+        }
+
+        /*Estilização do botão de baixar app*/
+        .btn-outline {
+            width: 18%;
+            display: flex;
+            justify-content: center;
+            height: 40px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-style: normal;
+            font-weight: 500px;
+            font-size: 20px;
+            line-height: 30px;
+            border-radius: 90px;
+            background-color: white;
+            color: #2C3C51;
+            
+            
+             }
+
+   /*Estilização do carrossel*/
+
+    .slider {
+        margin: 0 auto;
+    height:500px;
+    overflow: hidden;
+    width: 100%; 
+    margin-left: auto;
+    margin-right: auto; 
+    background-color: rgb(232, 232, 232);
+    }
+
+    .slides {
+        width: 400%;
+        height: 410px;
+        display: flex;
+    }
+
+    .slides input {
+        display: none;
+    }
+    
+    .slide {
+        width: 25%;
+        position: relative;
+    }
+
+    .slide img {  
+        width: 100%;
+        height: 510px;
+    }
+
+    .manual-navigation {
+        position:absolute;
+        width: 100%;
+        margin-top: 70px;
+        display: flex;
+        justify-content: center;
+    }
+    
+    .manual-btn {
+        border: 2px solid black;
+        padding: 5px;
+        border-radius: 25px;
+        cursor: pointer;
+        transition: 1s;
+    }
+
+    .manual-btn:not(:last-child){
+        margin-right: 30px;
+    }
+    
+    .manual-btn:hover{
+        background-color: rgb(0, 0, 0);
+    }
+    
+    #radio1:checked ~ .primeiro{
+        margin-left: 0;
+    }
+    
+    #radio2:checked ~ .primeiro{
+        margin-left: -25%;
+    }
+    
+    #radio3:checked ~ .primeiro{
+        margin-left: -50%;
+    }
+    
+    /*#radio4:checked ~ .primeiro{
+        margin-left: -75%;
+    }*/
+    
+    /*Navegação automática*/
+
+    .navigation-auto div{
+       
+        padding: 5px;
+        border-radius: 10px;
+      
+        transition: 1s;
+    }
+    
+    .navigation-auto{
+        position: absolute;
+        width: 100%;
+        margin-top: 480px;
+        display: flex;
+        justify-content: center;
+    }
+    
+    .navigation-auto div:not(:last-child){
+        margin-right: 30px;
+    }
+    
+    /* Deixar o botão preenchido, quando o campo estiver ativo*/
+    
+    #radio1:checked ~ .navigation-auto .auto-btn1{
+        background-color: black;
+    }
+    
+    #radio2:checked ~ .navigation-auto .auto-btn2{
+        background-color: black;
+    }
+    
+    #radio3:checked ~ .navigation-auto .auto-btn3{
+        background-color: black;
+    }
+    
+    /*#radio4:checked ~ .navigation-auto .auto-btn4{
+        background-color: black;
+    }*/
+
+
+
+
+    
+
+    /*Configuração da parte "Sobre"*/
+
+    /*Estilização em grid*/
+
+    
+    
+
+    .grid-container-3 {
+        display: grid;
+        grid-template-columns: auto auto ;
+        grid-template-rows: auto auto auto auto auto;
+        gap: 10px;
+        padding: 10px;
+       justify-content: center;
+    }
+
+    .img-visao img {
+      width: 100%;
+      height: auto;
+    }
+
+   
+     
+
+    .about p{
+        font-size: 15px;
+        text-align: justify;
+    }
+
+    .about h2 {
+      font-size: 25px;
+      text-align: center;
+    }
+
+  
+
+
+    /*Carrossel dos desenvolvedores*/
+
+     
+  .carousel {
+    width: 100%;
+    height: 300px;
+    overflow: hidden;
+    background-color: #dbd7d7;
+  }
+  
+  .carousel-images.active {
+    transform: translateX(-50%);
+  }
+
+  /*.carousel-images img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+  }*/
+
+  .carousel-buttons {
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+  }
+  .prev-button,
+  .next-button {
+    cursor: pointer;
+  position: absolute;
+  top: 280%;
+  width:auto ;
+  margin-top: -50px;
+  padding: 16px;
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+  font-size: 60px;
+  transition: 0.6s ease;
+  user-select: none;
+
+  border: none;
+
+  }
+
+  .next-button {
+    right: 0;
+   
+  }
+
+  .carousel-images img {
+    border-radius: 100%;
+  
+  }
+
+
+
+  .carousel-text {
+    display: flex;
+    justify-content:space-between;
+
+    margin-top: 10px;
+    flex-direction: row;
+    align-items: center;
+    
+  }
+  
+  .carousel-text h2 {
+    font-size: 40px;
+
+    justify-content: space-between;
+    
+    width: 100%;
+
+  }
+
+  .carousel-text p {
+    font-size: 30px;
+  
+    justify-content: space-between;
+    justify-content: space-around;
+
+  }
+
+  .carousel {
+    width: 100%;
+    height: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f0f0f0;
+    
+    
+  }
+  
+  .carousel-images {
+    display: flex;
+    width: 200%;
+    overflow: hidden;
+    flex-direction: row;
+    justify-content:space-between;
+    align-items: center;
+    justify-content: space-around;
+    
+    
+  }
+
+  .carousel-images p {
+    bottom: 0;
+    color: #fff;
+    font-size: 16px;
+    margin: 0;
+    padding: 10px;
+    position: absolute;
+    text-align: center;
+    width: 100%;
+  }
+  
+  .carousel-images img {
+    width: 8%;
+    align-items: center;
+  }
+  
+  /*.carousel-prev,
+  .carousel-next {
+    margin-top: 10px;
+    padding: 5px 10px;
+    font-size: 16px;
+    background-color: #ddd;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .carousel-prev:hover,
+  .carousel-next:hover {
+    background-color: #ccc;
+  }*/
+
+
+  #img-2:checked ~ #img-1 {
+    margin-left: -25%;
+}
+
+
+/*Estilização dos icones do rodapé*/
+
+.grid-container-5 {
+  display: grid;
+  background-color: #2C3C51;
+
+  align-items: center;
+}
+
+.icons {
+  display: flex;
+  justify-content: end;
+  padding: 15px;
+}
+
+.logo {
+  display: flex;
+  padding: 15px;
+}
+
+.logo a {
+  font-size: 20px;
+ 
+}
+
+/*Configurações do rodapé*/
+
+.grid-container-6 {
+  display: grid;
+  grid-template-columns: auto auto auto auto auto auto;
+  background-color: #2C3C51;
+}
+
+/*Links*/
+.list-group-item {
+  color: white;
+  font-size: 150%;
+}
+
+
+
+    
+    
