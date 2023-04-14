@@ -242,15 +242,15 @@ h1 {
     /* Deixar o botão preenchido, quando o campo estiver ativo*/
     
     #radio1:checked ~ .navigation-auto .auto-btn1{
-        background-color: black;
+        background-color:  rgb(232, 232, 232);
     }
     
     #radio2:checked ~ .navigation-auto .auto-btn2{
-        background-color: black;
+        background-color:  rgb(232, 232, 232);
     }
     
     #radio3:checked ~ .navigation-auto .auto-btn3{
-        background-color: black;
+        background-color:  rgb(232, 232, 232);
     }
     
     /*#radio4:checked ~ .navigation-auto .auto-btn4{
@@ -271,7 +271,7 @@ h1 {
 
     .grid-container-3 {
         display: grid;
-        grid-template-columns: auto auto ;
+        grid-template-columns: 50%  50%;
         grid-template-rows: auto auto auto auto auto;
         gap: 10px;
         padding: 10px;
@@ -287,12 +287,14 @@ h1 {
      
 
     .about p{
-        font-size: 15px;
+        font-size: 130%;
+         width: 90%;
+         padding:40px;
         text-align: justify;
     }
 
     .about h2 {
-      font-size: 25px;
+      font-size: 180%;
       text-align: center;
     }
 
@@ -471,7 +473,7 @@ h1 {
 
 .grid-container-6 {
   display: grid;
-  grid-template-columns: auto auto auto auto auto auto;
+  grid-template-columns: 100% 100% 100% ;
   background-color: #2C3C51;
 }
 
@@ -479,6 +481,26 @@ h1 {
 .list-group-item {
   color: white;
   font-size: 150%;
+}
+
+/*Estilização do contato no rodapé*/
+
+.contato-2 p{
+font-size: 110%;
+color: white;
+text-align:center
+}
+
+.contato-2 a {
+  color: white;
+  text-decoration: none;
+}
+
+/*Links de navegação do rodapé*/
+
+.links a{
+  text-decoration: none;
+  font-size: 130%;
 }
 
 
